@@ -1,1 +1,6 @@
+services:
+  - name: service1
+    repo: git@github.com:your-org/service1-helm.git
+  - name: service2
+    repo: git@github.com:your-org/service2-helm.git
 
