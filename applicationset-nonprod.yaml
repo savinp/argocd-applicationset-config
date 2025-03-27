@@ -6,8 +6,8 @@ metadata:
 spec:
   generators:
     - git:
-        repoURL: git@github.com:your-org/argocd-applicationset-config.git
-        revision: main
+        repoURL: https://github.com/savinp/argocd-applicationset-config
+        revision: develop
         directories:
           - path: "non-prod/*"
   template:
@@ -21,10 +21,10 @@ spec:
         path: "./"
         helm:
           valueFiles:
-            - "values-{{path.basename}}.yaml"
+            - "values.yaml"
       destination:
         server: https://kubernetes.default.svc
-        namespace: "{{path.basename}}"
+        namespace: default
       syncPolicy:
         automated:
           prune: true
