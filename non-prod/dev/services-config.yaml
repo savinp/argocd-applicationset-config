@@ -1,6 +1,6 @@
 services:
-  - name: service1
-    repo: git@github.com:your-org/service1-helm.git
-  - name: service2
-    repo: git@github.com:your-org/service2-helm.git
+  - name: shared-helm-chart
+    repo: https://github.com/savinp/shared-helm-chart
+  - name: my-helm-repo
+    repo: https://github.com/savinp/my-helm-repo
 
