@@ -1,6 +1,9 @@
-ns: dev
+- env: dev
+  ns: dev
+  name: service1
+  repoURL: https://github.com/savinp/service1-repo.git
 
-services:
-  - env: dev
-    name: service1
-    repoURL: https://github.com/savinp/service1-repo.git  
+- env: dev
+  ns: dev
+  name: service3
+  repoURL: https://github.com/savinp/service13-repo.git    
