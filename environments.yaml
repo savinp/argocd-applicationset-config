@@ -1,0 +1,7 @@
+services:
+  - name: serv1
+    repoURL: https://github.com/savinp/shared-helm-chart
+    env: dev
+  - name: serv2
+    repoURL: https://github.com/savinp/my-helm-repo
+    env: test
