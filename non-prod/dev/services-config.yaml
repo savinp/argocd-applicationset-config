@@ -1,6 +1,3 @@
-services:
-  - name: shared-helm-chart
-    repo: https://github.com/savinp/shared-helm-chart
-  - name: my-helm-repo
-    repo: https://github.com/savinp/my-helm-repo
-
+- env: dev
+  name: service1
+  repoURL: https://github.com/savinp/service1-repo.git
