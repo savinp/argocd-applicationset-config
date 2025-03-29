@@ -1,5 +1,6 @@
-namespace: dev1
+namespace: dev # 🔥 Define namespace once at the top
+
 services:
-- env: dev
-  name: service1
-  repoURL: https://github.com/savinp/application-helm-chart
+  - env: dev
+    name: service1
+    repoURL: https://github.com/savinp/service1-repo.git
