@@ -1,0 +1,7 @@
+- env: dev
+  name: service1
+  repoURL: https://github.com/savinp/service1-repo.git
+
+- env: test
+  name: service2
+  repoURL: https://github.com/savinp/service2-repo.git
