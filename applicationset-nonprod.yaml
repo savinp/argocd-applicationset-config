@@ -1,32 +1,31 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: microservices-nonprod-appset
+  name: microservices-appset
   namespace: argocd
 spec:
   generators:
     - git:
         repoURL: https://github.com/savinp/argocd-applicationset-config
         revision: develop
-        directories:
-          - path: "non-prod/*"
+        files:
+          - path: environments.yaml
   template:
     metadata:
-      name: "{{path.basename}}-{{name}}"  # Example: dev-service1, staging-service2
+      name: '{{env}}-{{name}}'
     spec:
-      project: non-prod
+      destination:
+        namespace: '{{env}}'
+        server: https://kubernetes.default.svc
+      project: default
       source:
-        repoURL: "{{repo}}"
+        repoURL: '{{repoURL}}'
+        path: ./
         targetRevision: main
-        path: "./"
         helm:
           valueFiles:
-            - "values.yaml"
-      destination:
-        server: https://kubernetes.default.svc
-        namespace: default
+            - values.yaml
       syncPolicy:
         automated:
           prune: true
           selfHeal: true
-
