@@ -1,7 +1,7 @@
 environments:
   - env: dev
-    name: service1
+    name: serv1
     repoURL: https://github.com/savinp/service1-repo.git
   - env: test
-    name: service2
+    name: serv2
     repoURL: https://github.com/savinp/service2-repo.git
