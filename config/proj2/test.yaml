@@ -1,4 +1,5 @@
 namespace: test1
+services:
 - env: test
   name: service2
   repoURL: https://github.com/savinp/service2-repo.git
