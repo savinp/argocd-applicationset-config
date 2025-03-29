@@ -9,7 +9,7 @@ spec:
         repoURL: https://github.com/savinp/argocd-applicationset-config
         revision: develop
         files:
-          - path: environments.yaml
+          - path: config
   template:
     metadata:
       name: '{{env}}-{{name}}'
