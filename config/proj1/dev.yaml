@@ -1,3 +1,4 @@
 - env: dev
+  ns: dev-ns
   name: service1
   repoURL: https://github.com/savinp/service1-repo.git   
