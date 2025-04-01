@@ -12,10 +12,10 @@ spec:
           - path: config
   template:
     metadata:
-      name: '{{env}}-{{name}}'
+      name: '{{name}}-{{env}}'
     spec:
       destination:
-        namespace: '{{env}}'
+        namespace: '{{ns}}'
         server: https://kubernetes.default.svc
       project: default
       source:
