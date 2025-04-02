@@ -1,4 +1,4 @@
 - env: test
   ns: test-ns
-  name: shared-helm-chart
-  repoURL: https://github.com/savinp/shared-helm-chart
+  name: application-helm-chart
+  repoURL: https://github.com/savinp/application-helm-chart
