@@ -1,4 +1,4 @@
 - env: test
   ns: test-ns
-  name: application-helm-chart
-  repoURL: https://github.com/savinp/application-helm-chart
+  name: application-helm-chart2
+  repoURL: https://github.com/savinp/application-helm-chart2
